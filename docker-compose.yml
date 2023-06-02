@@ -7,4 +7,5 @@ services:
     cap_drop:
       - all
     volumes:
-      - "./data/:/data/"
+      - "/data/:/data/"
+      - "/algo/:/algo/"
