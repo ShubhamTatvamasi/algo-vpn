@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  algo:
+    image: ghcr.io/trailofbits/algo
+    container_name: algo
+    restart: unless-stopped
+    cap_drop:
+      - all
+    volumes:
+      - "./data/:/data/"
